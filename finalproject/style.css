@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.nav li:first-child
+{
+background:none;
+}
+.nav ul li.drop {
+  position: relative;
+}
+.nav ul > li {
+  display: inline-block;
+}
+.nav ul li a {
+  line-height: 45px;
+  padding: 0 20px;
+  height: 45px;
+  color: #777;
+}
+.nav ul li a:hover {
+  color:#09F;
+}
+
+.dropOut .triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+  top: -8px;
+  left: 50%;
+  margin-left: -8px;
+}
+.dropdownContain {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  left: 60%;
+  margin-left: -100px; /* half of width */
+  top: -400px;
+}
+.dropOut {
+  width: 200px;
+  background: white;
+  float: left;
+  position: relative;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  box-shadow: 0 1px 6px rgba(0,0,0,.15);
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.dropOut ul {
+  float: left;
+  padding: 0 0;
+}
+.dropOut ul li {
+  text-align: left;
+  background: transparent url(http://i50.tinypic.com/303efm1.png) center top repeat-x;
+  float: left;
+  width: 155px;
+  padding: 12px 0 10px 15px;
+  margin: 0px 15px;
+  color: #777;
+}
+.dropOut li:first-child
+{
+background:none;
+}
+
+.dropOut ul li:hover {
+  color:#09F;
+  -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+
+ul li:hover a { color:#09F;
+  -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+ }
+ul li:hover .dropdownContain { top: 45px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+/*menu style*/
+h1 {
+text-align: center;
+}
+.carouselExampleIndicators {margin-top:20}
+carousel-inner {margin-top:20}
+
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+
+hr#eight {
+  background: black;
+  border-bottom: 2px black;
+  width: 40%; margin: 0 auto;
+  
+  &:before {
+    top: 3px;
+    left: 0;
+    padding-right: 2em;
+  }
+}
+.button {
+  border: 2px solid #2e2e2e;
+  cursor: pointer;
+  letter-spacing: 0.2125rem;
+  overflow: hidden;
+  padding: 20px 30px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 
+    background 5s cubic-bezier(0.19, 1, 0.22, 1),
+    border 1s cubic-bezier(0.19, 1, 0.22, 1),
+    color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  user-select: none;
+}
+
+.button a {
+  color: #969696;
+  font-family: "Varela Round";
+  text-decoration: none;
+}
+
+.button .mask {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100px;
+  position: absolute;
+  transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+  transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 200px;
+}
+
+.button .shift {
+  display: inline-block;
+  transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: #fff;
+  box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+  transition: background 0s;
+}
+
+.button:hover a {
+  color: #fff;
+}
+
+.button:hover .mask {
+  background-color: #fff;
+  transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+
+.button:hover .shift {
+  transform: translateX(5px);
+}
+
+.button:active {
+  background-color: #grey;
+}
+
+.button:active a {
+  color: #202020;
+}
+
+body.show {
+  background-color: #282828;
+}
+/*
+.button:hover {
+  background-image: url('http://.com/img/codepen/savvy.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+
+  padding: 45px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+  color:  #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+  font-size:18px;
+  font-weight: bold;
+  color:  #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-right{
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
+}
